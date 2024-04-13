@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 :root{
     --background_page: #3a030d;
     --background_pokeCase: #dc092f;
@@ -8,4 +11,62 @@
     --fifthButton_color: #519afb;
     --border_display:#b1b0b1;
     --display_pokemon:#fefeff;
+}
+/* main-page */
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background_page);
+}
+/* main - pokecase */
+.pokeCase{
+    width: 35vw;
+    height: 85vh;
+    background-color: var(--background_pokeCase);
+
+}
+.front{
+    padding-left: 2rem;
+    padding-top:2rem;
+    padding-bottom: 2rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-right: 1rem solid black;
+}
+.back{
+    clip-path: polygon(58% 0, 78% 20%, 100% 20%, 100% 100%, 0 100%, 0 0);
+    border-bottom-right-radius: 1rem;
+}
+
+/*buttons container */
+.buttonContainer{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.button{
+    border-radius: 50%;
+    border:0.15rem solid black;
+}
+.sizeM{
+    height: 4rem;
+    width: 4rem;
+}
+.firstColor{
+    background-color: var(--firstButton_color);
+}
+.secondColor{
+    background-color:var(--secondButton_color);
+}
+.thridColor{
+    background-color:var(--thirdButton_color);
+}
+.fourthColor{
+    background-color: var(--fourthButton_color);
+}
+.sizeS{
+    
 }
